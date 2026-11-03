@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    min-height: 850px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+}
+.main-calculator{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: #7F8890;
+    align-items: center;
+    flex-direction: column;
+}
+.ekran{
+    display: flex;
+    width: 450px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #44D5F9;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    align-items: center;
+}
+.ekran-value{
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: "Noto Sans Mono", monospace;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 70px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+button{
+    border-radius: 15px;
+    border: none;
+    background-color: #CAD2D9;
+    font-size: 35px;
+    font-family: "Noto Sans Mono", monospace;
+    font-weight: 600;
+}
+button:hover{
+    background-color: #a0a5aa;
+    transition: 100ms;
+}
+.rowan:hover{
+    background-color: #124786;
+    transition: 100ms;
+}
+@media (max-width: 600px) {
+    .main-calculator{
+        width: 300px;
+        height: 300px;
+        border-radius: 9px;
+    }
+    .ekran{
+        width: 270px;
+        height: 42px;
+        margin-top: 18px;
+        margin-bottom: 24px;
+        border-radius: 9px;
+    }
+    .ekran-value{
+        margin-left: 12px;
+        font-size: 24px;
+    }
+    .buttons{
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: repeat(4, 42px);
+        grid-column: 6px;
+        grid-row: 6px;
+    }
+    button{
+        font-size: 21px;
+        border-radius: 9px;
+    }
+}
+@media (max-height: 400px) {
+    body{
+        min-height: 400px;
+    }
+}
+@media (max-height: 300px) {
+    body{
+        min-height: 300px;
+    }
+}
